@@ -12,7 +12,7 @@ jobs:
     plan:
       - get: resource-tutorial
       - task: create-some-files
-        file: create.yml
+        file: git-repo/create.yml
         
       - task: show-some-files
-        file: show.yml
+        file: git-repo/show.yml
