@@ -4,7 +4,7 @@ resources:
     type: git
     source:
       uri: https://github.com/OlhaLesk/concourse_input_output.git
-      branch: develop
+      branch: master
 
 jobs:
   - name: job-pass-files
