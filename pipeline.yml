@@ -10,7 +10,9 @@ jobs:
   - name: job-pass-files
     public: true
     plan:
-      - get: resource-tutorial
+      - get: git-repo
+        version: every
+        trigger: true
       - task: create-some-files
         file: git-repo/create.yml
         
