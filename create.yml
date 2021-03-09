@@ -9,4 +9,4 @@ outputs:
   - name: some-files
 
 run:
-  path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/create_some_files.sh
+  path: resource-tutorial/create_some_files.sh
