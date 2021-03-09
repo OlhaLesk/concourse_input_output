@@ -1,0 +1,18 @@
+---
+resources:
+  - name: resource-tutorial
+    type: git
+    source:
+      uri: https://github.com/OlhaLesk/concourse_input_output.git
+      branch: develop
+
+jobs:
+  - name: job-pass-files
+    public: true
+    plan:
+      - get: resource-tutorial
+      - task: create-some-files
+        file: create.yml
+        
+      - task: show-some-files
+        file: show.yml
