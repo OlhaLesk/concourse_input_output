@@ -7,5 +7,8 @@ inputs:
   - name: resource-tutorial
   - name: some-files
 
+outputs:
+  - name: test-output
+
 run:
   path: resource-tutorial/show_files.sh
