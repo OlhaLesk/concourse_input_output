@@ -12,9 +12,6 @@ popd
 exit 0
 
 
-
-
-
 ##!/bin/sh
 #
 #ls some-files/*
