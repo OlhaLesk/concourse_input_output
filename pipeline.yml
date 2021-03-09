@@ -1,6 +1,6 @@
 ---
 resources:
-  - name: git_repo
+  - name: resource-tutorial
     type: git
     source:
       uri: https://github.com/OlhaLesk/concourse_input_output.git
@@ -10,11 +10,9 @@ jobs:
   - name: job-pass-files
     public: true
     plan:
-      - get: git-repo
-        version: every
-        trigger: true
+      - get: resource-tutorial
       - task: create-some-files
-        file: git-repo/create.yml
+        file: resource-tutorial/create.yml
         
       - task: show-some-files
-        file: git-repo/show.yml
+        file: resource-tutorial/show.yml
